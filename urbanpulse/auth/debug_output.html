@@ -1,0 +1,179 @@
+<!-- Session ID: s6ho63fj0585oi7b7jm0ninlvk -->
+<!-- Forcing simple header -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEBUG MODE - DEBUG MODE - Login</title>
+    <style>
+        /* Nuclear option for visibility */
+        * {
+            border: 1px solid red !important;
+        }
+        footer {
+            background: lime !important;
+            color: black !important;
+            font-size: 24px !important;
+            padding: 30px !important;
+            position: fixed !important;
+            bottom: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            z-index: 9999 !important;
+        }
+    </style>
+</head>
+<body style="margin-bottom: 100px !important;">
+
+<!-- Main content -->
+<div style="border: 5px solid blue !important; padding: 20px !important;">
+    <h1 style="color: red !important;">DEBUGGING FOOTER ISSUE</h1>
+    <p>If you don't see a bright green footer below, something is seriously wrong.</p>
+    
+    <!-- Header path: C:\wamp64\www\urbanpulse\auth/../includes/header.php -->
+<!-- Footer path: C:\wamp64\www\urbanpulse\auth/../includes/footer.php -->
+<!-- Header exists: YES -->
+<!-- Footer exists: YES -->
+
+<!-- METHOD 1: Direct include -->
+    </main>
+    
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>About UrbanPulse</h3>
+                <p>Connecting communities with local businesses since 2023. Our mission is to help people discover the best local services and help businesses thrive.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="#">Browse Businesses</a></li>
+                    <li><a href="#">Add Your Business</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Retail</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Real Estate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; 2025 UrbanPulse. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<!-- METHOD 2: file_get_contents -->
+<?php
+// includes/footer.php
+?>
+    </main>
+    
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>About UrbanPulse</h3>
+                <p>Connecting communities with local businesses since 2023. Our mission is to help people discover the best local services and help businesses thrive.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="#">Browse Businesses</a></li>
+                    <li><a href="#">Add Your Business</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Retail</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Real Estate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright">
+            <p>&copy; <?php echo date('Y'); ?> UrbanPulse. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<!-- METHOD 3: highlight_file -->
+<pre><code style="color: #000000"><span style="color: #0000BB">&lt;?php
+</span><span style="color: #FF8000">// includes/footer.php
+</span><span style="color: #0000BB">?&gt;
+</span>    &lt;/main&gt;
+    
+    &lt;footer&gt;
+        &lt;div class="container footer-content"&gt;
+            &lt;div class="footer-section"&gt;
+                &lt;h3&gt;About UrbanPulse&lt;/h3&gt;
+                &lt;p&gt;Connecting communities with local businesses since 2023. Our mission is to help people discover the best local services and help businesses thrive.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="footer-section"&gt;
+                &lt;h3&gt;Quick Links&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="index.php"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Browse Businesses&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Add Your Business&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="footer-section"&gt;
+                &lt;h3&gt;Categories&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Restaurants&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Retail&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Real Estate&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="footer-section"&gt;
+                &lt;h3&gt;Connect With Us&lt;/h3&gt;
+                &lt;div class="social-links"&gt;
+                    &lt;a href="#"&gt;&lt;i class="fab fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;a href="#"&gt;&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;a href="#"&gt;&lt;i class="fab fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;a href="#"&gt;&lt;i class="fab fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="container copyright"&gt;
+            &lt;p&gt;&amp;copy; <span style="color: #0000BB">&lt;?php </span><span style="color: #007700">echo </span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #DD0000">'Y'</span><span style="color: #007700">); </span><span style="color: #0000BB">?&gt;</span> UrbanPulse. All rights reserved.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div>
+
+<!-- 8. Final forced footer -->
+<footer id="forced-debug-footer">
+    FORCED FOOTER - SHOULD BE VISIBLE AT BOTTOM OF VIEWPORT<br>
+    Time: 11:40:13<br>
+    Footer path: C:\wamp64\www\urbanpulse\auth/../includes/footer.php</footer>
+
