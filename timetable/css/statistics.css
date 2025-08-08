@@ -1,0 +1,113 @@
+/* statistics.css - Styles for the statistics page */
+
+/* Main table styling */
+.statistics-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.statistics-table thead tr {
+    background-color: #006400;
+    color: #ffffff;
+    text-align: left;
+}
+
+.statistics-table th,
+.statistics-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.statistics-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.statistics-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.statistics-table tbody tr:last-of-type {
+    border-bottom: 2px solid #006400;
+}
+
+.statistics-table tfoot tr {
+    font-weight: bold;
+    background-color: #f8f9fa;
+    border-top: 2px solid #006400;
+}
+
+/* Cell highlighting */
+.highlight {
+    background-color: #e6f7e6;
+    font-weight: bold;
+    color: #006400;
+}
+
+/* Column specific styles */
+.serial-no {
+    width: 50px;
+    text-align: center;
+}
+
+.student-name {
+    text-align: left;
+    min-width: 180px;
+}
+
+.job-count {
+    min-width: 100px;
+}
+
+.total-col {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    min-width: 80px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .statistics-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* Header styling for statistics page */
+.statistics-header {
+    color: #006400;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Container for the table to handle overflow */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Print-specific styles */
+@media print {
+    .statistics-table {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .highlight {
+        background-color: #e6f7e6 !important;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    .total-col, thead tr {
+        background-color: #f0f0f0 !important;
+        -webkit-print-color-adjust: exact;
+    }
+}
